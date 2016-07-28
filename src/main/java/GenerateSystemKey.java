@@ -17,7 +17,7 @@ public class GenerateSystemKey {
             generator.init(1024);
             byte[] keybytes = generator.generateKey().getEncoded();
 
-            FileUtils.writeByteArrayToFile(new File("sys_key"), keybytes);
+            FileUtils.writeByteArrayToFile(new File("system_key"), keybytes);
 
         } catch (NoSuchAlgorithmException e)
 
